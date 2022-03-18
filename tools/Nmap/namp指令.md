@@ -67,7 +67,7 @@ OS DETECTION:
   --osscan-guess: Guess OS more aggressively
 ```
 
-
+```
 TIMING AND PERFORMANCE:
   Options which take <time> are in seconds, or append 'ms' (milliseconds),
   's' (seconds), 'm' (minutes), or 'h' (hours) to the value (e.g. 30m).
@@ -88,7 +88,7 @@ TIMING AND PERFORMANCE:
   --scan-delay/--max-scan-delay <time>: Adjust delay between probes
   --min-rate <number>: Send packets no slower than <number> per second
   --max-rate <number>: Send packets no faster than <number> per second
-
+```
 
 ```
 FIREWALL/IDS EVASION AND SPOOFING:
