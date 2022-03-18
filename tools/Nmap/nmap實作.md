@@ -234,3 +234,57 @@ Network Distance: 1 hop
 OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 2.80 seconds
 ```
+
+## 將掃描的資料匯出
+
+```
+nmap -T4 -sT -O 192.168.111.130 -oN nmap.log                                                                                               130 ⨯
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-03-18 14:09 EDT
+Nmap scan report for 192.168.111.130
+Host is up (0.00040s latency).
+Not shown: 976 closed tcp ports (conn-refused)
+PORT      STATE SERVICE
+22/tcp    open  ssh
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+3000/tcp  open  ppp
+3306/tcp  open  mysql
+3389/tcp  open  ms-wbt-server
+4848/tcp  open  appserv-http
+7676/tcp  open  imqbrokerd
+8009/tcp  open  ajp13
+8022/tcp  open  oa-system
+8031/tcp  open  unknown
+8080/tcp  open  http-proxy
+8181/tcp  open  intermapper
+8383/tcp  open  m2mservices
+8443/tcp  open  https-alt
+9200/tcp  open  wap-wsp
+49152/tcp open  unknown
+49153/tcp open  unknown
+49154/tcp open  unknown
+49157/tcp open  unknown
+49158/tcp open  unknown
+49159/tcp open  unknown
+49160/tcp open  unknown
+MAC Address: 00:0C:29:1B:60:89 (VMware)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.92%E=4%D=3/18%OT=22%CT=1%CU=42235%PV=Y%DS=1%DC=D%G=Y%M=000C29%T
+OS:M=6234CAF2%P=x86_64-pc-linux-gnu)SEQ(SP=FA%GCD=1%ISR=110%TI=I%CI=I%II=I%
+OS:SS=S%TS=7)OPS(O1=M5B4NW2ST11%O2=M5B4NW2ST11%O3=M5B4NW2NNT11%O4=M5B4NW2ST
+OS:11%O5=M5B4NW2ST11%O6=M5B4ST11)WIN(W1=FFFF%W2=FFFF%W3=FFFF%W4=FFFF%W5=FFF
+OS:F%W6=FFFF)ECN(R=Y%DF=Y%T=80%W=FFFF%O=M5B4NW2NNS%CC=N%Q=)T1(R=Y%DF=Y%T=80
+OS:%S=O%A=S+%F=AS%RD=0%Q=)T2(R=Y%DF=Y%T=80%W=0%S=Z%A=S%F=AR%O=%RD=0%Q=)T3(R
+OS:=Y%DF=Y%T=80%W=0%S=Z%A=O%F=AR%O=%RD=0%Q=)T4(R=Y%DF=Y%T=80%W=0%S=A%A=O%F=
+OS:R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T
+OS:=80%W=0%S=A%A=O%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=
+OS:0%Q=)U1(R=Y%DF=N%T=80%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(
+OS:R=Y%DFI=N%T=80%CD=Z)
+
+Network Distance: 1 hop
+
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 11.16 seconds
+```
