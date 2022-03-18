@@ -72,6 +72,13 @@ TIMING AND PERFORMANCE:
   Options which take <time> are in seconds, or append 'ms' (milliseconds),
   's' (seconds), 'm' (minutes), or 'h' (hours) to the value (e.g. 30m).
   -T<0-5>: Set timing template (higher is faster)
+      數字越大代表掃描速度越快
+      1. paranoid (0)
+      2. sneaky (1)
+      3. polite (2)
+      4. normal (3)
+      5. aggressive (4)
+      6. insane (5)
   --min-hostgroup/max-hostgroup <size>: Parallel host scan group sizes
   --min-parallelism/max-parallelism <numprobes>: Probe parallelization
   --min-rtt-timeout/max-rtt-timeout/initial-rtt-timeout <time>: Specifies
