@@ -1,4 +1,4 @@
-## Nmap
+## Nmap -h
 
 ```
 HOST DISCOVERY:
