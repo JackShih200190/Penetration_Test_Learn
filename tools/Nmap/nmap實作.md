@@ -39,14 +39,12 @@ PORT      STATE SERVICE
 MAC Address: 00:0C:29:1B:60:89 (VMware)
 
 Nmap done: 1 IP address (1 host up) scanned in 1.51 seconds
-``` 
-
-![image](https://user-images.githubusercontent.com/55253641/159050975-a1c7f776-5af4-47aa-95ae-91a71301e00e.png)
-
+```
 
 ## Port Scan
 
 -sS 參數代表掃描技術是 TCP SYN Scan    (效率較差)
+
 -sT 參數代表掃描技術是 TCP Connect Scan，掃描時會呼叫作業系統的 System Call Connect API，以送出刺探封包  (效率較佳)
 ```
 nmap -T4 -sT -p 1-65535 192.168.111.130
