@@ -188,3 +188,49 @@ Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 166.24 seconds
 ```
+
+## 探測作業系統
+OS details 欄位就是 猜測為檢測目標是執行 Linux Kernel 2.6.15 – 2.6.26 版本。
+由於 Nmap 是從刺探封包的回應與開啟的服務，去猜測檢測目標的作業系統版本，所以無法得知是執行哪一個 Linux Distribution，
+頂多只能分辨出 Linux 或 Windows 作業系統的差別。
+
+```
+nmap -T4 -sT -O 192.168.111.130        
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-03-18 14:02 EDT
+Nmap scan report for 192.168.111.130
+Host is up (0.00051s latency).
+Not shown: 977 closed tcp ports (conn-refused)
+PORT      STATE SERVICE
+22/tcp    open  ssh
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+3306/tcp  open  mysql
+3389/tcp  open  ms-wbt-server
+4848/tcp  open  appserv-http
+7676/tcp  open  imqbrokerd
+8009/tcp  open  ajp13
+8022/tcp  open  oa-system
+8031/tcp  open  unknown
+8080/tcp  open  http-proxy
+8181/tcp  open  intermapper
+8383/tcp  open  m2mservices
+8443/tcp  open  https-alt
+9200/tcp  open  wap-wsp
+49152/tcp open  unknown
+49153/tcp open  unknown
+49154/tcp open  unknown
+49157/tcp open  unknown
+49158/tcp open  unknown
+49159/tcp open  unknown
+49160/tcp open  unknown
+MAC Address: 00:0C:29:1B:60:89 (VMware)
+Device type: general purpose
+Running: Microsoft Windows 7   <== 系統
+OS CPE: cpe:/o:microsoft:windows_7::sp1  
+OS details: Microsoft Windows 7 SP1   <== 版本
+Network Distance: 1 hop
+
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 2.80 seconds
+```
