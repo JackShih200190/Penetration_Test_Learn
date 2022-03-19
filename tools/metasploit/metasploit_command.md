@@ -1,14 +1,14 @@
 ## metasploit help
 
-指令類型|	名稱|	說明
+|指令類型|	名稱|	說明|
 -------------------------------------------
-Core	|一般基本指令|	常用的指令，如search、set、version、cd、exit	
-Module Commands	|模組相關指令|	從使用特定模組到列出資訊等，如 show、use、info
-Job	|連線指令	|管理連線，如 jobs、kill、handler
-Resource Script	|批次處理指令	|如果有想重複作的腳本可以利用 makerc 儲存攻擊流程，在利用 resource 引入。
-Database Backend|	資料庫相關指令|	支援 PostgreSQL 儲存掃描資訊、攻擊結果。
-Credentials Backend	|密碼相關指令|	測試過程中可能取得密碼相關的值，如帳號、密碼、NTLM Hash、md、JTR、REALM
-Developer	|開發者相關指令	|查看 framework.log 或是重載 Ruby 函示庫
+|Core	|一般基本指令|	常用的指令，如search、set、version、cd、exit	|
+|Module Commands	|模組相關指令|	從使用特定模組到列出資訊等，如 show、use、info|
+|Job	|連線指令	|管理連線，如 jobs、kill、handler|
+|Resource Script	|批次處理指令	|如果有想重複作的腳本可以利用 makerc 儲存攻擊流程，在利用 resource 引入。|
+|Database Backend|	資料庫相關指令|	支援 PostgreSQL 儲存掃描資訊、攻擊結果。|
+|Credentials Backend	|密碼相關指令|	測試過程中可能取得密碼相關的值，如帳號、密碼、NTLM Hash、md、JTR、REALM|
+|Developer	|開發者相關指令	|查看 framework.log 或是重載 Ruby 函示庫|
 
 ```
 meterpreter > help
