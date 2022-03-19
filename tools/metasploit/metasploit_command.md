@@ -1,7 +1,7 @@
 ## metasploit help
 ```
 |指令類型|	名稱|	說明|
--------------------------------------------
+|-------|------|-----|
 |Core	|一般基本指令|	常用的指令，如search、set、version、cd、exit	|
 |Module Commands	|模組相關指令|	從使用特定模組到列出資訊等，如 show、use、info|
 |Job	|連線指令	|管理連線，如 jobs、kill、handler|
