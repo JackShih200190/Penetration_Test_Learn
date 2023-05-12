@@ -63,3 +63,21 @@ responder -I [選擇網卡] -wrf
 ![image](https://github.com/JackShih200190/Penetration_Test_Learn/assets/55253641/22c8fa3a-de34-403c-b744-96735e3cd8e3)
 
 讓靶機發送一個假的請求到Kali端 一定會回傳錯誤，但因為Responder的監聽是啟動的，就會抓到一些NTLM的認證值
+
+將我們抓到的登入Hash值進行破解
+利用john這個破解工具並且針對NTLMv2來進行破解
+```cmd
+john --format=netntlmv2 hash.txt 
+```
+
+![image](https://github.com/JackShih200190/Penetration_Test_Learn/assets/55253641/123ddb73-3cb3-49e8-9c82-e09c61537a56)
+
+我們得到了登入的帳號密碼利用WinRM的漏洞來進行攻擊
+
+[WinRM預設Port](https://learn.microsoft.com/zh-tw/troubleshoot/windows-server/networking/service-overview-and-network-port)
+[Evil-Winrm](https://www.kali.org/tools/evil-winrm/)
+#### Evil-Winrm 安裝方式
+```cmd
+sudo gem install winrm winrm-fs stringio logger fileutils
+git clone https://github.com/Hackplayers/evil-winrm.git
+```
